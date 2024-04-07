@@ -121,7 +121,7 @@ function choiceCell(item) {
     item.getAttribute("style") !==
       'background-image: url("./images/star.png");'
   ) {
-    item.style.backgroundImage = 'url("../images/star.png")';
+    item.style.backgroundImage = 'url("./images/star.png")';
     movingPlanet();
   } else if (
     move === "planet" &&
