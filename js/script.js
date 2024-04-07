@@ -117,20 +117,20 @@ function choiceCell(item) {
   if (
     move === "star" &&
     item.getAttribute("style") !==
-      'background-image: url("../images/planet.png");' &&
+      'background-image: url("./images/planet.png");' &&
     item.getAttribute("style") !==
-      'background-image: url("../images/star.png");'
+      'background-image: url("./images/star.png");'
   ) {
     item.style.backgroundImage = 'url("../images/star.png")';
     movingPlanet();
   } else if (
     move === "planet" &&
     item.getAttribute("style") !==
-      'background-image: url("../images/planet.png");' &&
+      'background-image: url("./images/planet.png");' &&
     item.getAttribute("style") !==
-      'background-image: url("../images/star.png");'
+      'background-image: url("./images/star.png");'
   ) {
-    item.style.backgroundImage = 'url("../images/planet.png")';
+    item.style.backgroundImage = 'url("./images/planet.png")';
     movingStar();
   }
   checkMove();
@@ -144,8 +144,8 @@ function checkMove() {
     moves.push(item.getAttribute("style"));
   });
 
-  let urlPlanet = 'background-image: url("../images/planet.png");';
-  let urlStar = 'background-image: url("../images/star.png");';
+  let urlPlanet = 'background-image: url("./images/planet.png");';
+  let urlStar = 'background-image: url("./images/star.png");';
 
   const starWins = document.querySelector(".js-star-wins");
   const planetWins = document.querySelector(".js-planet-wins");
