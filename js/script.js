@@ -118,8 +118,7 @@ function choiceCell(item) {
     move === "star" &&
     item.getAttribute("style") !==
       'background-image: url("./images/planet.png");' &&
-    item.getAttribute("style") !==
-      'background-image: url("./images/star.png");'
+    item.getAttribute("style") !== 'background-image: url("./images/star.png");'
   ) {
     item.style.backgroundImage = 'url("./images/star.png")';
     movingPlanet();
@@ -127,8 +126,7 @@ function choiceCell(item) {
     move === "planet" &&
     item.getAttribute("style") !==
       'background-image: url("./images/planet.png");' &&
-    item.getAttribute("style") !==
-      'background-image: url("./images/star.png");'
+    item.getAttribute("style") !== 'background-image: url("./images/star.png");'
   ) {
     item.style.backgroundImage = 'url("./images/planet.png")';
     movingStar();
