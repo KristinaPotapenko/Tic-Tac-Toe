@@ -1,0 +1,29 @@
+@import "./base/fonts";
+@import "./base/reset-style";
+@import "./base//variables";
+@import "./base/base";
+
+@import "./components/button";
+@import "./components/visually-hidden";
+@import "./components/wrap";
+
+@import "./layout/cell-one-one";
+@import "./layout/cell-one-three";
+@import "./layout/cell-one-two";
+@import "./layout/cell-three-one";
+@import "./layout/cell-three-three";
+@import "./layout/cell-three-two";
+@import "./layout/cell-two-one";
+@import "./layout/cell-two-three";
+@import "./layout/cell-two-two";
+@import "./layout/cell";
+@import "./layout/change";
+@import "./layout/field-game";
+@import "./layout/modal-draw";
+@import "./layout/modal-planet";
+@import "./layout/modal-star";
+@import "./layout/modal";
+@import "./layout/move";
+@import "./layout/planet";
+@import "./layout/score";
+@import "./layout/star";
