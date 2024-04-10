@@ -1,0 +1,15 @@
+:root {
+  --primary-light-color: #eed3a3;
+  --primary-dark-color: #4f5d64;
+
+  --background-color: #ece5d5;
+
+  --shadow-light-color: rgba(155, 164, 167, 0.4);
+  --shadow-dark-color: rgba(0, 0, 0, 0.45);
+
+  --accent-color: #c6d4d9;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-laptop: 1280px;
