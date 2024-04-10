@@ -1,0 +1,26 @@
+.score {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 24px;
+
+  &__planet,
+  &__star {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(28 / 24);
+    letter-spacing: 0px;
+    color: #303030;
+
+    @media screen and (min-width: 500px) {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 42px;
+      line-height: calc(56 / 42);
+    }
+  }
+}

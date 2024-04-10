@@ -1,0 +1,59 @@
+.modal-draw {
+  &__inner {
+    background-image: url("../images/draw-bg.png");
+  }
+
+  &__images {
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    top: -76px;
+    width: auto;
+    height: 100px;
+
+    @media screen and (min-width: 550px) {
+      top: -96px;
+      width: auto;
+      height: 120px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -110px;
+      width: auto;
+      height: 160px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      top: -120px;
+      width: auto;
+      height: 180px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      top: -97px;
+      width: auto;
+      height: 200px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: var(--primary-light-color);
+
+    @media screen and (min-width: 550px) {
+      font-size: 40px;
+      line-height: calc(48 / 40);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 30px;
+      font-size: 72px;
+      line-height: calc(87 / 72);
+    }
+  }
+}

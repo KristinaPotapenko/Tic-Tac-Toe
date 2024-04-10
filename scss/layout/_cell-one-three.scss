@@ -1,0 +1,66 @@
+.cell-one-three {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $bp-tablet) {
+    justify-content: center;
+  }
+
+  &__image_circle {
+    position: absolute;
+    top: 18px;
+    right: -4px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(270deg);
+
+    @media screen and (min-width: 600px) {
+      top: 27px;
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__image_arrow {
+    position: absolute;
+    top: 57px;
+    right: 20px;
+    height: 40%;
+
+    @media screen and (min-width: 600px) {
+      top: 86px;
+      right: 33px;
+      height: 70%;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 110px;
+      right: 42px;
+      height: auto;
+    }
+  }
+
+  &__text {
+    margin: 0 0 16px 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 60%;
+    background-image: url("../images/slot-background.jpg");
+    border-radius: 5px;
+  }
+}
